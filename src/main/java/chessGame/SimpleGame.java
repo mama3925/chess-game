@@ -1,7 +1,6 @@
 package chessGame;
 
 import java.util.Random;
-import java.util.Collection;
 
 import chessLib.KnightMove;
 import chessLib.Position;
@@ -10,7 +9,7 @@ public class SimpleGame extends BaseGame {
 
     private Position position;
 
-    private Random random;
+    private final Random random;
 
     public SimpleGame() {
         this.position = null;

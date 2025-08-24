@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PositionTest {
-    @Test void PositionTest() {
+    @Test void PositionClassTest() {
         Position pos = new Position(1, 1);
         assertEquals(1, pos.x());
         assertEquals(1, pos.y());

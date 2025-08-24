@@ -4,9 +4,9 @@ import chessLib.Position;
 import java.util.*;
 
 public class ComplexGame extends BaseGame {
-    private Piece[][] board;
-    private Map<Position, Piece> piecePositions;
-    private Random random;
+    private final Piece[][] board;
+    private final Map<Position, Piece> piecePositions;
+    private final Random random;
 
     public ComplexGame() {
         this.board = new Piece[8][8];
@@ -165,9 +165,7 @@ public class ComplexGame extends BaseGame {
                     }
                     
                     // 添加装饰器标记
-                    if (piece instanceof ScoringPiece && piece instanceof LoggingPiece) {
-                        symbol = symbol + "*";
-                    } else if (piece instanceof ScoringPiece) {
+                    if (piece instanceof ScoringPiece) {
                         symbol = symbol + "+";
                     } else if (piece instanceof LoggingPiece) {
                         symbol = symbol + "!";
